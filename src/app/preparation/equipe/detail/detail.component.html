@@ -1,0 +1,37 @@
+<section class="detail">
+    <mat-card class="example-card" (click)="retour()">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{data?.nom}}</mat-card-title>
+               
+        </mat-card-header>
+        <img mat-card-image src="{{data?.image}}">
+        <mat-card-content>
+            <section fxLayout="column" (click)="retour()">
+                <span class="detail__label">
+                    Capacité pour le travail:{{data?.capaciteTravail}}</span>
+                <span class="detail__label"
+                    >Capacité pour gérer les otages:{{data?.capaciteOtage}}</span>
+                <span class="detail__label"
+                    >Capacité avec les armes:{{data?.capaciteArme}}</span>
+                <span class="detail__label"
+                    >Gestion de la colère:{{data?.capaciteColere}}</span>
+                <span class="detail__label"
+                    >Gestion de l'angoisse:{{data?.capaciteAngoisse}}</span>
+                <span class="detail__label"
+                    >Gestion des négociations:{{data?.capaciteNegociation}}</span>
+                <span class="detail__label">
+                    Gestion des nouvelles technologie:{{data?.capaciteNouvelleTechnologie}}</span>
+                <span>
+                    Gestion des explosifs:{{data?.capaciteExplosif}}</span>
+                <span class="detail__label">
+                    Dégré d'optimisme:{{data?.optimiste}} / 3</span>
+            </section>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="retour()">
+                Retour a la liste</button>
+        </mat-card-actions>
+    </mat-card>
+
+</section>

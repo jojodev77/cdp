@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    background-color: black;
+    color: white;
+    font-size: arial;
+    border: 5px solid white;
+    min-height: calc(100% - 25px);
+}

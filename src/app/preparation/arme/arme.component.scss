@@ -1,0 +1,19 @@
+.arme {
+    height: calc(20% - 5px);
+    border: 1px solid red;
+    overflow-x: scroll;
+    &__card {
+        padding: 5px;
+    }
+    &__button {
+        border-radius: 5px;
+        background-color: orangered;
+        color: white;
+        font-weight: bolder;
+    }
+}
+
+img {
+    height: 180px;
+    width: 200px;
+}

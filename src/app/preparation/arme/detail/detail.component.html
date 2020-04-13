@@ -1,0 +1,29 @@
+<section class="detail">
+    <mat-card class="example-card" (click)="retour()">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{data?.nom}}</mat-card-title>
+               
+        </mat-card-header>
+        <img mat-card-image src="{{data?.image}}">
+        <mat-card-content>
+            <section fxLayout="column" (click)="retour()">
+                <span class="detail__label">
+                   Type d'arme:{{data?.type}}</span>
+                   <span class="detail__label">
+                   Arme factice:{{data?.real}}</span>
+                        <span class="detail__label"
+                    >Dégat occasionner:{{data?.degats}}</span>
+                <span class="detail__label"
+                    >Nombre d'utilisation:{{data?.nombreUtilisation}}</span>
+                <span class="detail__label"
+                    >Temps d'utilisation:{{data?.tempsUtilisation}}</span>
+            </section>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="retour()">
+                Retour a la liste</button>
+        </mat-card-actions>
+    </mat-card>
+
+</section>

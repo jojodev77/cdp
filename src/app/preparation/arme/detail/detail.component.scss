@@ -1,0 +1,11 @@
+.detail {
+    height: calc(20% - 5px);
+    border: 1px solid red;
+    overflow-x: scroll;
+    &__card {
+        padding: 5px;
+    }
+    &__label {
+        padding: 5px;
+    }
+}
